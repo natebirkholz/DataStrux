@@ -67,16 +67,12 @@ class LinkedList <T:Equatable> {
       var current = self.first
 
       while current?.next != nil {
-        println("current is \(current?.value) and previous is \(previous?.value)")
         previous = current
         current = current?.next
-        println("current is \(current?.value) and previous is \(previous?.value)")
       }
       val = current?.value
       previous?.next = current?.next
-      println("current is \(current?.value) and previous is \(previous?.value)")
     }
-    println("-----------------")
     return val
   }
 
@@ -95,6 +91,19 @@ let bB = ll.dequeue()
 let cC = ll.dequeue()
 let dD = ll.dequeue()
 let eE = ll.dequeue()
+
+lk.push("This")
+lk.push("Is")
+lk.push("A")
+lk.push("List")
+
+
+let aa = lk.pop()
+let bb = lk.pop()
+let cc = lk.pop()
+let dd = lk.pop()
+let ee = lk.pop()
+
 
 
 
